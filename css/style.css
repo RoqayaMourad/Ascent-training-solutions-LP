@@ -1,0 +1,111 @@
+*{
+	margin: 0;
+	padding: 0;
+    font-size: 16px;
+}
+body {
+	overflow-X: hidden;
+}
+ul {
+    list-style: none;
+}
+
+/* Preloader Styles */
+#preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all .5s .5s ease;
+    -moz-transition: all .5s .5s ease;
+    transition: all .5s .2s ease;
+}
+.loader{
+    position:absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: auto;
+    margin-top: -30px;
+}
+body.loaded #preloader{
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+/* header */
+.header-top {
+    background-color: #212121;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.header-top li {
+    color: #ddd;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+}
+.header-top li a {
+    color: #ddd;
+    letter-spacing: 1px;
+}
+.header-top .list-inline-item:not(:last-child) {
+    margin-right: 6.5rem;
+}
+.header-top li i {
+    color: #ddd;
+    padding: 0rem 0.78rem;
+}
+
+
+.header-bottom .logo-name {
+    color:#8DC342;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    font-size: 1.99rem;
+    font-weight: 800;
+}
+.header-bottom .logo-name span {
+   color: #2F4392;
+   letter-spacing: -0.04em;
+   font-size: 1.99rem;
+   font-weight: 800; 
+}
+
+.cta-btn a{
+font-weight: 600;
+font-size: 12px;
+color: #fff;
+text-transform: uppercase;
+font-size: 25px;
+text-decoration: none;
+}  
+.cta-btn {
+padding: 0.2rem 1.5rem;
+background-color: #8DC342;
+}  
+
+.cta-btn:hover {
+    background-color: #ffc326;
+    color: #fff;
+}
+
+
+/* hero section */
+.hero-section {
+    background-image: url(../image/slider.jpg) ;
+     display: flex;
+      width: 100%;
+      margin: auto 0px;
+      height: auto;
+}
+
+
+.courses {
+    background-color: #111;
+}
