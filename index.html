@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body data-spy="scroll" data-target="#navbar" data-offset="60">
+<body data-spy="scroll" data-target="#navbar" data-offset="60" id="body">
 
    <!-- Preloader -->
     <div id='preloader'>
@@ -53,9 +53,7 @@
             </div></div>
         </div>
     </div>
-
-
-    <div class="header-bottom py-4">
+    <div class="header-bottom py-3">
         <div class="container">
                 <div class="row  d-flex justify-content-center align-items-center">
                     <div class="col-lg-6">
@@ -70,13 +68,14 @@
             </div>
         </div>
     </div>
+    </div>
 </header>
 
 
 
 
 <!-- hero section -->
-<section class="hero-section">
+<section class="hero-section" id="hero">
         <div class=""
             style="">
             <div class="padding-lg" style="width: 100%;margin: auto 0px;">
@@ -120,6 +119,7 @@
                                         <form action="form.php" method="post" id="ajax_form"
                                             class=" form-horizontal">
                                             <div class="form-group">
+                                                <div class="row">
                                                 <div class="col-sm-6">
                                                     <input type="text" id="name" name="name" class="form-control"
                                                         placeholder="Name" required>
@@ -127,7 +127,8 @@
                                                 <div class="col-sm-6">
                                                     <input type="email" id="email" name="email" class="form-control"
                                                         placeholder="Email" required>
-                                                </div>
+                                                </div> 
+                                             </div>
                                             </div>
                                             <div class="form-group">
                                                 <div class="col-xs-12">
@@ -254,7 +255,7 @@
 
 
 <!-- services section -->
-<section class="service-section">
+<section class="services-section bd-bottom">
     <div class="container">
         <div class="row">
             <div class="col-4 col-xs-12 ptb-15 wow zoomIn" data-wow-delay="0ms" data-wow-duration="1000ms">
@@ -314,13 +315,13 @@
 </section>
 
 <!-- why choose us -->
-<section class="content-block">
+<section class="content-block bd-bottom">
     <div class="wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1000ms">
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 pr-0">
                 <img src="image/about.jpg" alt="" class="img-fluid" srcset="">
             </div>
-            <div class="col-6 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1000ms">
+            <div class="col-6 wow fadeInLeft bg-dark py-5 px-3" data-wow-delay="0ms" data-wow-duration="1000ms">
                 <div class="">
                     <h2 class="">WHY CHOOSE US?</h2>
                     <p class="">
@@ -342,10 +343,9 @@
 </section>
 
 <!-- parallex section -->
-<section class="counter-section py-5"
-style="background-image: url(image/about2.jpg); background-color: rgba(0,0,0,0.5); background-blend-mode:darken;">
+<section class="parallex-section">
 <div class="container">
-    <h3 id="titleback" style="text-align: center;" class="text-white mb-20 xs-br-none">Possessing a Standard 11
+    <h3 id="titleback" style="text-align: center;" class="text-white">Possessing a Standard 11
         Mining Induction will enable you to safely work in the mining industry. Your training will provide you
         with the right skills to understand what you are responsible for in your future role in the mining
         industry.</h3>
@@ -356,9 +356,9 @@ style="background-image: url(image/about2.jpg); background-color: rgba(0,0,0,0.5
 
 <!-- last section -->
 <section class="">
-    <div class="container">
+    <div class="">
     <div class="row">
-        <div class="col-6 wow fadeInLeft testi-courses">
+        <div class="col-6 wow fadeInLeft types-courses bg-dark text-light">
             <div class="">
                 <h2 class="">Course Types</h2>
                 <div class="testi-content" style="">
@@ -416,20 +416,20 @@ style="background-image: url(image/about2.jpg); background-color: rgba(0,0,0,0.5
 
 
 <!-- Footer -->
-<footer class="">
-    <div class="container p-4">
+<footer class=" bg-dark bd-top-dark text-light">
+    <div class="container footer-up">
       <div class="row">
         <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-          <h5 class="text-uppercase">ASCENT TRAINING SOLUTIONS</h5>
+          <h5 class="text-uppercase footer-h5">ASCENT TRAINING SOLUTIONS</h5>
   
-          <p>
+          <p class="footer-p">
             High quality, Flexible and Reliable training focusing on safety and compliance within the Civil, Construction, Mining and Resource industries.
           </p>
         </div>
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">CONTACT US</h5>
-          <ul class="list-unstyled mb-0">
-            <li><a href="tel:0415 152 742"><img src="image/24-hours.png" width="32"
+          <h5 class="text-uppercase contact-us">CONTACT US</h5>
+          <ul class="">
+            <li><a href="tel:0415 152 742"><img src="image/24-hours(1).png" width="32"
                 height="32"> 0415 152 742</a></li>
     <li><a href="mailto:joe@ascent.edu.au">joe@ascent.edu.au</a></li>
     <li>Mon - Sat: 7:00 AM- 6:00 PM</li>
@@ -439,9 +439,9 @@ style="background-image: url(image/about2.jpg); background-color: rgba(0,0,0,0.5
     </div>
   
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © COPYRIGHT 2021 
-      <a class="text-dark" href="https://.com/">ASCENT TRAINING SOLUTIONS</a>
+    <div class="text-center bg-dark bd-top-dark footer-bottom">
+       
+      <p class=" footer-bottom-p" href="https://.com/"> © COPYRIGHT 2021 ASCENT TRAINING SOLUTIONS</p>
     </div>
     <!-- Copyright -->
   </footer>
@@ -449,10 +449,11 @@ style="background-image: url(image/about2.jpg); background-color: rgba(0,0,0,0.5
 
 
 
-
+  <a data-scroll href="#body" id="scroll-top" class="scroll-to-top"><i class="ti-angle-up"></i></a>
 
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/contact.js"></script>
     <script src="js/main.js"></script>
 </body>
