@@ -38,6 +38,23 @@ ul {
 .bd-bottom {
     border-bottom: 1px solid #eaeaea;
 }
+h2{
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    position: relative;
+    color: #fff;
+}
+h2:after{
+    background-color: #8DC342;
+    content: '';
+    height: 2px;
+    width: 80px;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
 
 /* Preloader Styles */
 #preloader {
@@ -152,18 +169,122 @@ body.loaded #preloader {
 /* hero section */
 .hero-section {
     background-image: url(../image/slider.jpg);
+    background-position: center;
+    background-size: cover;
     display: flex;
     width: 100%;
     margin: auto 0px;
     height: auto;
 }
+.hero-content {
+    position: relative;
+     background-color: rgba(0,0,0,0.8);
+    
+}
+.hero-content .main-h2{
+    font-size: 24px !important;
+    margin-bottom:3rem;
+}
 
+.hero-content .sub-h2 {
+    font-size: 18px;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+.hero-content .small-text , .courses .small-text {
+    font-size: 11pt;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.35;
+    letter-spacing: 1px;
+    color: #ffffff9e;
+    font-family: Calibri;
+}
+
+.f2f{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+.img-p{
+    color: #fff;    
+    font-size: 12px;
+    line-height: 17px;
+    width: 20%;
+    margin: auto;
+}
+
+.form-col {
+    background-color: rgba(0,0,0,0.7);
+}
+.form-col .main-h2{
+    font-size: 24px !important;
+}
+.form-p {
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #fff;
+}
+.send-btn{
+        background-color: #8DC342;
+        padding: 10px 30px;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        font-weight: 600;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        overflow: hidden;
+        border-radius: 0px;
+        cursor: pointer;
+}
+.send-btn:focus, .send-btn:hover {
+    color: #111;
+    text-decoration: none;
+
+}
+.cf-wrapper .form-control {
+    background: none;
+    border: none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #ddd;
+    color: #8b8b8b;
+    padding: 10px;
+}
 /* courses details section */
 /* courses section */
 .courses {
     background-color: #111;
 }
-
+.courses .main-h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.courses .sub-h2 {
+    font-size: 18px;
+}
+.headul {
+    list-style-type: disc;
+}
+.headul li {
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+}
+.small-text-p, .small-li {
+    font-weight: 400;
+    line-height: 1.35;
+    letter-spacing: 1px;
+    color: #fff;
+    font: 12pt Calibri Italic;
+}
 
 
 /* services section */
@@ -184,6 +305,15 @@ body.loaded #preloader {
 
 
 /* why choose us */
+.whyus-p{
+    color: #fff;
+opacity: 0.6;
+letter-spacing: 1px;
+line-height: 30px;
+}
+.whyus-img{
+    min-height: 100%;
+}
 
 
 /*  parallex section  */
@@ -209,7 +339,59 @@ body.loaded #preloader {
    
 }
 
+/* aboutus */
+.aboutus-h2{
+    font-size: 24px;
+}
+.aboutus-p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    opacity: 0.6;
+}
 
+
+.courses-counter {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .courses-counter li {
+    counter-increment: step-counter;
+    margin-bottom: 10px;
+  }
+  
+  .courses-counter li::before {
+    content: counter(step-counter);
+    margin-right: 5px;
+    background-color: #111;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 50%;
+    border: 2px solid #8DC342;
+  position: absolute;
+  }
+  
+.counter{
+    padding-left:4rem;
+    padding: 1rem 0rem 1rem 4rem;
+}
+.counter h4 {
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    /* margin: 0 0 10px; */
+}
+.counter p {
+    color: #fff;
+    opacity: 0.6;
+    font-size: 13px;
+}
 /* footer */
 .footer-h5{
         margin-bottom: 25px;
