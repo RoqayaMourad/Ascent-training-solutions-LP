@@ -18,7 +18,6 @@ body::-webkit-scrollbar-track {
   }
 body::-webkit-scrollbar-thumb {
     background-color: rgb(141, 195, 66);
-   
 }
   
 
@@ -301,6 +300,7 @@ body.loaded #preloader {
     width: 90%;
     margin-top: 0.6rem;
     text-transform: uppercase;
+    margin-left: 1rem;
 }
 
 
@@ -414,7 +414,7 @@ line-height: 30px;
 
 }
 .footer-up{
-    padding: 80px 0;
+    padding: 80px;
 }
 .footer-up ul {
     list-style-type: disc;
@@ -475,4 +475,76 @@ body.scrolled #scroll-top{
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
     text-decoration: none;
+}
+
+
+/* responsivness */
+
+@media (min-width: 575.98px) {
+    /* greater that 575 */
+}
+
+@media (max-width: 454.98px) {
+    .cta-btn a {
+        font-size: 11px !important;
+    }
+    .cta-btn img {
+        width:17px;
+    }
+    
+}
+@media (max-width: 575.98px) {
+    
+}
+@media (max-width: 767.98px) { 
+    .header-top{
+        display: none;
+    }
+    .logo-name{
+        display: none;
+    }
+    .hero-content img {
+        width: 95px !important;
+    }
+    #titleback {
+        padding: 0px 0px;
+    }
+.parallex-section {
+    
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+}
+
+
+@media (max-width: 991.98px) {
+    .logo-name , .logo-name span {
+        font-size: 1rem !important;
+    } 
+.cta-btn a {
+    font-size: 16px;
+}
+.form-col {
+    margin-top: 2rem;
+}
+.whyus-img {
+    min-width: 100%;
+    min-height: 100%;
+}
+}
+
+@media (max-width: 1199.98px) { 
+    
+}
+@media (max-width: 1060.98px) { 
+   .hero-content img {
+       width: 125px;
+   } 
+}
+
+@media (min-width: 1199.98px) { 
+.whyus-img {
+    min-width: 100%;
+}
 }

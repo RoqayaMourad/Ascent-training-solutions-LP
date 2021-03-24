@@ -1,6 +1,6 @@
 <?php 
         
-        $EmailFrom = "From: Cedo Landing Page<frankwilson.quad@gmail.com>";
+        $EmailFrom = "From:  Landing Page<frankwilson.quad@gmail.com>";
         $EmailTo = "frankwilson.quad@gmail.com, emmasmith.quad@gmail.com";
         $name=$_POST['name-form'];
         $email=$_POST['email-form'];
@@ -23,9 +23,9 @@
         $Body .= "\n";
         $Body .= "\n";
         $Body .= "\n";
-        $Body .= "This e-mail was sent from a contact form on Lift Floats (https://www.cedo.com)";
+        $Body .= "This e-mail was sent from a contact form on  (https://www..com)";
 
-        $Subject = "cedo Landing Page Contact Form Submission";
+        $Subject = "Landing Page Contact Form Submission";
  
         // send email 
         if(str_replace(' ', '', $name) != "" && str_replace(' ', '', $email)  != "" &&  str_replace(' ', '', $phone)  != "" &&  str_replace(' ', '', $details) != "" ){
